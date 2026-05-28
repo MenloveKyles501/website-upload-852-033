@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影片搜索-欧美热门影片-热门影片片库-高清视频在线播放</title>
+    <meta name="description" content="搜索欧美热门影片片库，按影片标题、地区、年份、类型与标签快速查找高清在线播放内容。">
+    <meta name="keywords" content="影片搜索,欧美热门影片搜索,热门影片片库,欧美热门影片,欧美影片,热门影片,影片片库,高清播放,精选影片">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="影片搜索-欧美热门影片-热门影片片库-高清视频在线播放">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-shell">
+        <a class="site-logo" href="./index.html" aria-label="欧美热门片库">
+            <span class="logo-mark">▶</span>
+            <span>欧美热门片库</span>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="打开导航">☰</button>
+        <div class="nav-panel" data-nav-menu>
+            <nav class="main-nav" aria-label="主导航">
+                <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./ranking.html">排行榜</a><a class="nav-link active" href="./search.html">搜索</a>
+                <a class="nav-link nav-link-soft" href="./category-hot-selection.html">热门精选</a><a class="nav-link nav-link-soft" href="./category-new-release.html">新片热播</a><a class="nav-link nav-link-soft" href="./category-crime-suspense.html">悬疑犯罪</a><a class="nav-link nav-link-soft" href="./category-drama-story.html">剧情故事</a>
+            </nav>
+            <form class="nav-search" action="./search.html" method="get" data-global-search>
+                <input type="search" name="q" placeholder="搜索影片" aria-label="搜索影片">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+<section class="sub-hero from-blue">
+    <div class="container">
+        <span>Search</span>
+        <h1>影片搜索</h1>
+        <p>按片名、地区、类型、年份或关键词查找片库内容。</p>
+    </div>
+</section>
+<section class="container page-section">
+    <form class="search-page-form" action="./search.html" method="get" data-search-page-form>
+        <input type="search" name="q" placeholder="搜索片名、地区、类型或标签" data-search-page-input>
+        <button type="submit">搜索</button>
+    </form>
+    <div class="movie-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <section>
+            <a class="footer-logo" href="./index.html">
+                <span class="logo-mark">▶</span>
+                <span>欧美热门片库</span>
+            </a>
+            <p>汇总欧美热门影片相关页面，展示热度较高的影片内容和分类片库。</p>
+        </section>
+        <section>
+            <h2>片库分类</h2>
+            <ul><li><a href="./category-hot-selection.html">热门精选</a></li><li><a href="./category-new-release.html">新片热播</a></li><li><a href="./category-crime-suspense.html">悬疑犯罪</a></li><li><a href="./category-drama-story.html">剧情故事</a></li><li><a href="./category-comedy-life.html">喜剧生活</a></li><li><a href="./category-romance-fantasy.html">爱情奇幻</a></li></ul>
+        </section>
+        <section>
+            <h2>热门入口</h2>
+            <ul>
+                <li><a href="./ranking.html">热门排行榜</a></li>
+                <li><a href="./categories.html">分类总览</a></li>
+                <li><a href="./search.html">影片搜索</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="footer-bottom">© 2026 欧美热门片库</div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
